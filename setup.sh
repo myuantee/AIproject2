@@ -1,2 +1,9 @@
-streamlit==1.8.1
-python-constraint==1.4.0
+mkdir -p ~/.streamlit/
+
+echo "\
+[server]\n\
+port = $PORT\n\
+enableCORS = false\n\
+headless = true\n\
+\n\
+" > ~/.streamlit/config.toml
