@@ -70,9 +70,9 @@ for i in range(len(lst)):
     df2["Population"] = state_pop[i]
     df2["Vaccine Type"] = ["VacA", "VacB", "VacC"]
     
-    vacA = math.ceil(state_pop[i][2] / state[i][1])
+    vacA = math.ceil(state_pop[i][0] / state[i][1])
     vacB = math.ceil(state_pop[i][1] / state[i][1])
-    vacC = math.ceil(state_pop[i][0] / state[i][1])
+    vacC = math.ceil(state_pop[i][2] / state[i][1])
     
     df2["Number of Days"] = [vacA, vacB, vacC]
     
