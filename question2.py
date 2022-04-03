@@ -7,6 +7,7 @@ import math
 
 st.title("Question 2: Vaccine Distribution Modelling")
 st.markdown("The main task is to assign the right vaccine types and amounts to the vaccination centres. Formulate the problem as Constraint Satisfaction Problem.")
+st.markdown("We decide to give vaccination priority to people over 60 years old. After that, we will assign vaccines for ages 35 to 60 years old. And lastly, people under 35 years old.")
 
 # creates a list to store number of centres for each state
 lst = [[20, 15, 10, 21, 5, 5000], 
